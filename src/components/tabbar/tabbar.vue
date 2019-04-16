@@ -8,6 +8,11 @@
       <i class="icon iconfont icon-fenlei"></i>
       <span>分类</span>
     </router-link>
+    <!-- icon-faxian -->
+    <router-link to="discover" class="tab">
+      <i class="icon iconfont icon-faxian"></i>
+      <span>发现</span>
+    </router-link>
     <router-link to="shoppingcart" class="tab">
       <i class="icon iconfont icon-gouwuche2"></i>
       <span>购物车</span>
@@ -34,10 +39,12 @@ export default {
   /* height: 50px; */
   position: fixed;
   bottom: 0;
+  z-index: 999;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   background-color: #fff;
+  opacity: 1;
   box-shadow: 0 2px 4px #000;
   padding: 8px 0;
 }

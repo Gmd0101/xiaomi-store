@@ -5,6 +5,7 @@ import Home from '@/components/pages/Home'
 import Classify from '@/components/pages/classify'
 import ShoppingCart from '@/components/pages/ShoppingCart'
 import My from '@/components/pages/My'
+import Discover from '@/components/pages/discover'
 Vue.use(Router)
 
 export default new Router({
@@ -13,6 +14,7 @@ export default new Router({
       path: '/',
       name: 'Index',
       component: Index,
+      redirect: '/home',
       children: [
         {
           path: '/home',
@@ -33,6 +35,11 @@ export default new Router({
           path: '/my',
           name: 'My',
           component: My
+        },
+        {
+          path: '/discover',
+          name: 'Discover',
+          component: Discover
         }
       ]
     }
